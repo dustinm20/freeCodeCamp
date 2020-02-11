@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This form is used as a survey for testing my knowledge from FreeCodeCamp.">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title">Retirement Survey Form</h1>
+                <p id="description" class="description text-center">Please fill out the form to be contacted by someone from our office.</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age:<span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="number" min="18" max="120" class="form-control" placeholder="Age"/>
+                </div>
+                <div class="form-group">
+                    <label id="phone-label" for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="XXXXXXXXXX" required/>
+                </div>
+                <div class="form-group">
+                    <p>Which stage of retirement are you in?</p>
+                    <select id="dropdown" name="stage" class="form-control" required>
+                        <option disabled selected value>Select current stage</option>
+                        <option value="starting">Just starting career (18-27)</option>
+                        <option value="mid">Middle career (28-46)</option>
+                        <option value="pre">Pre-Retirement (47-59)</option>
+                        <option value="retirement">Early retirement (60-74)</option>
+                        <option value="end">End of life (75-Death)</option>
+                    </select> 
+                </div>
+                <div class="form-group">
+                    <p>What are you most interested in?</p>
+                    <label>
+                        <input name="interest" value="401" type="radio" class="input-radio" checked/>401(k)
+                    </label>
+                    <label>
+                        <input name="interest" value="social-security" type="radio" class="input-radio"/>Social Security
+                    </label>
+                    <label>
+                        <input name="interest" value="insurance" type="radio" class="input-radio"/>Life Insurance
+                    </label>
+                    <label>
+                        <input name="interest" value="other" type="radio" class="input-radio"/>Other
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Pick what would be most helpful to you right now? <span class="clue">(Check all that apply)</span></p>
+                    <label><input name="selection" value="classes" type="checkbox" calss="input-checkbox"/>Retirement Classes</label>
+                    <label><input name="selection" value="counselling" type="checkbox" calss="input-checkbox"/>Retirement Counselling</label>
+                    <label><input name="selection" value="ssn" type="checkbox" calss="input-checkbox"/>Social Security Help</label>
+                    <label><input name="selection" value="financial" type="checkbox" calss="input-checkbox"/>Financial Budgeting Classes</label>
+                    <label><input name="selection" value="insurance" type="checkbox" calss="input-checkbox"/>Insurance Classes</label>
+                    <label><input name="selection" value="bucket" type="checkbox" calss="input-checkbox"/>Bucket List Check-off</label>
+                    <label><input name="selection" value="financialReview" type="checkbox" calss="input-checkbox"/>Complete Financial Review</label>
+                </div>
+                <div class="form-group">
+                    <p>Any additional information or request?</p>
+                    <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter comments here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
