@@ -1,2 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-/*This will be the CSS for my tech doc page. */
+html,
+body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+    
+}
