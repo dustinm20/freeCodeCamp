@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+html, body {
+    min-width: 290px;
+    color: #4d4e53;
+    font-family: 'Dosis', ;
+    line-height: 1.5;
+}
+
+.fa-trademark {
+    size: 1px;
+}
