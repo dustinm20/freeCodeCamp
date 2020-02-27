@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-html,
-body {
+html, body {
     min-width: 290px;
     color: #4d4e53;
     background-color: #ffffff;
