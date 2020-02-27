@@ -73,21 +73,21 @@
                 <header>Hello World</header>
                 <article>
                     <p>To get started with writing JavaScript, open the Web Console in multi-line mode, and write your first 
-                        "Hello world" JavaScript code:<br />
-                        <code>(function() {<br />
-                            &nbsp&nbsp&nbsp&nbsp"use strict";<br />
-                            &nbsp&nbsp&nbsp&nbspfunction greetMe(yourName) {<br />
-                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspalert('Hello ' + yourName);<br />
-                            &nbsp&nbsp&nbsp&nbsp}<br />
-                            <br />
-                            &nbsp&nbsp&nbsp&nbspgreetMe('World');<br />
-                        })();</code>
+                        "Hello world" JavaScript code:<code>(function() {
+    "use strict";
+    function greetMe(yourName) {
+        alert('Hello ' + yourName);
+    }                      
+    greetMe('World');
+})();</code>
                     </P>
                     <p>
                         In the following pages, this guide introduces you to the JavaScript syntax and language features, so that you will be able to write more complex applications.
                     </p>
                     <p>
-                        But for now, remember to always include the <code>(function(){"use strict"; before your code, and add })();</code> to the end of your code. You will learn what these mean,<br />
+                        But for now, remember to always include the <code>(function() {
+    "use strict"; //before your code, and add
+})();</code> to the end of your code. You will learn what these mean,<br />
                         but for now they can be thought of as doing the following:
                     </p>
                     <ol>
@@ -119,7 +119,7 @@
                         You can use most of ISO 8859-1 or Unicode letters such as å and ü in identifiers. (For more details, see this blog post.) You can also use the Unicode escape sequences as characters in identifiers.
                      </p>
                     <p>
-                        Some examples of legal names are <code>Number_hits</code>, <code>temp99</code>, <code>$credit</code>, and <code>_name</code>.
+                        Some examples of legal names are: <code>Number_hits</code><code>temp99</code><code>$credit</code><code>_name</code>
                     </p>
                 </article>
             </section>
